@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--  Quiz 3
+===========================================================================
+1. Radio Buttons Quiz
+2. Feedback on Submittion
+3. Grade on Submittion
+4. Needs a Submittion Button
+-->
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Piece Of Cake | Script</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Ubuntu" rel="stylesheet">
+    <!-- resit browser to defualt -->
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/grid.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+
+<!-- There we go ..-->
+  <body class="quiz-3">
+    <!-- start navigation bar -->
+    <!-- start navigation bar -->
+    <nav>
+        <div class="navbar">
+          <div class="container">
+            <a href="index.html" class="clearlink nav-link"><img class="logo" src="images/script.png" alt="Script"/></a>
+            <a href="contact.html" class="clearlink nav-link"><span class="cont-link blue">Contact Prof!</span></a>
+          </div>
+        </div>
+      <div class="clearfix"></div>
+    </nav>
+  <!-- __end navigation bar -->
+
+  <!-- start of header
+  ======================================================================================= -->
+
+    <header class="header">
+      <div class="container">
+        <h1 class="yellow"><a class="clearlink head-link grey" href="index.html">Script</a>     <i class="fas fa-angle-right grey"></i> Piece of Cake!</h1>
+        <p class="des-p grey">
+          Hi There. This quiz is an MCQ formed of 9 Questions. <br>
+          This specific quiz is executed using JavaScript.<br>
+          So, don’t only answer the questions but also figure out how we did it!
+          <br>
+          <br>
+          Cool? Get going! <br>
+          Got something in your mind?
+          <a class="clearlink par-link yellow" href="contact.html">drop me a message</a>
+        </p>
+      </div>
+    </header>
+  <!-- _end header -->
+
+    <!-- end of header
+    ======================================================================================= -->
+    <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+
+    <!-- start section Quiz -->
+    <section class="qui3">
+      <div class="container">
+        <!-- Quiz consists of two parts: Tabs -->
+          <!-- There goes the tab buttons -->
+          <div class="tabs-bar col-12">
+              <button class="next-btn btn left col-6" onclick="openTab('part1')" style="width:100%; margin-left:0px;">Part 1</button>
+              <button class="next-btn btn right col-6" onclick="openTab('part2')" style="width:100%; margin-left:0px;">Part 2</button>
+          </div>
+          <div class="clearfix"></div>
+
+          <!-- There goes tab 1 -->
+            <div id="part1" class="tab">
+
+            <!-- First Quetion: text -->
+              <div class="quiz1-questions">
+                <div class="row">
+
+                  <div class="question col-12 txt-left  ">What output will be displayed in the alert box after the following code is run?</div>
+                  <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+  &lt;script&gt;
+      var x=103;
+      var y=9;
+      alert(x%=y);
+  &lt;/script&gt;
+</pre>
+
+
+                  <form class="form1 answers col-12 txt-center">
+                    <div class="row txt-center">
+                      <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+            <!--true--> <label class="txt-center col-12" for="txt1a">
+                          <input id="txt1a" class="answer qn-text col-12 txt-center" type="text" name="qn1">
+                        </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            <!-- Second Question: Drop Down -->
+              <div class="quiz1-questions">
+                <div class="row">
+
+                  <div class="question col-12 txt-left">Which of the following syntax for creating a RegExp object is correct?</div>
+                  <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+    (i) var txt=new RegExp(pattern,attributes);
+
+    (ii) var txt=/pattern/attributes;
+</pre>
+
+                  <form class="form2 answers col-12 txt-center">
+                    <div class="row txt-center">
+                      <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+                      <label class="drop-dow-label col-12 txt-center" for="drop2a">
+                          <select id="drop2a" class="drop-down col-12">
+                            <option>select ...</option>
+                            <option class="answer" value="(i) only" name="qn2">(i) only</option>
+                            <option class="answer" value="(ii) only" name="qn2">(ii) only</option>
+                            <option class="answer" value="Both (i) and (ii)" name="qn2">Both (i) and (ii)</option>
+              <!--true-->   <option class="answer" id="answer2a"value="None of the above"name="qn2">None of the above</option>
+                          </select>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Third Question: radio btns -->
+                <div class="quiz1-questions">
+                  <div class="row">
+
+                    <div class="question col-12 txt-left">What would be displayed in the alert box if the following code is run?</div>
+                    <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+    &lt;script&gt;
+        alert(parseFloat(9+10));
+    &lt;/script&gt;
+</pre>
+
+                    <form class="form3 answers col-12 txt-center">
+                      <div class="row txt-center">
+                        <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+                          <input  class="answer" type="radio" name="qn3" value='a'><label class="">19</label>
+                          <input  class="answer" type="radio" name="qn3" value='b'><label class="" >910</label>
+            <!--true-->   <input id="answer3c" class="answer" type="radio" name="qn3" value='c'><label class="" for="rad3c">None</label>
+                          <input  class="answer" type="radio" name="qn3" value='d'><label class="" >Error</label>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+
+                <!-- Fourth Question: Slider -->
+                  <div class="quiz1-questions">
+                    <div class="row">
+
+                      <div class="question col-12 txt-left">What is displayed on screen when the following code is run?</div>
+                      <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+  <pre class="code col-12">
+    &lt;div&gt; id="demo"&gt;&lt;div&gt;
+
+      &lt;script&gt;
+
+        function displayData(){
+        document.getElementById("demo").innerHTML = ( 5 + 0 + "5");
+        }
+        displayData();
+
+      &lt;/script&gt;
+  </pre>
+
+                      <form class="form4 answers col-12 txt-center">
+                        <div class="row txt-center">
+                          <div class="space-10"></div><!-- Quickly A 10px div-->
+
+                          <label class="range4 col-12"for="">
+                            <div class="space-10"></div><!-- Quickly A 10px div-->
+
+                            <input class="answer col-12" type="range" id="rangeInput" name="rangeInput" step="5" value="0" max="55" oninput="outputUpdate(value)" >
+
+                            <div id="rangeText">0</div>
+                            <div id="output"></div>
+                          </label>
+
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                  <button id="submit" class="button submit-btn btn">Submit Quiz</button>
+
+                  <div class="clearfix"></div>
+                  <div class="space-60"></div><!-- Quickly A 60px Div instead of bothering with paddings. -->
+
+
+            </div><!--_closes tab 1-->
+
+
+          <!--*********** There goes tab 1: Drag & Drop Game! **********-->
+            <div id="part2" class="tab" style="display:none">
+
+              <!-- Game Question Start Here -->
+              <div id="quiz3" class="quiz1-questions">
+                <div class="row">
+
+                  <div class="question col-12 txt-left">Sort the following code blocks to Display: "Hello World!" on the screen  </div>
+                  <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+
+
+                            <div id="drag-game" class="nAccessContent">
+                              <div class="game" id="game-wrapper">
+                                <div id="step1" class="drag one" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+&lt;div&gt; id="demo"&gt;&lt;div&gt;
+</pre>
+                                </div>
+                                <div id="drop1" class="dropzone two" ondrop="drop(event)" ondragover="allowDrop(event)">Step 1</div>
+                                <div id="step3" class="drag three" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+function myFunction() {
+</pre>
+                                </div>
+                                <div id="drop2" class="dropzone four" ondrop="drop(event)" ondragover="allowDrop(event)">Step 2</div>
+                                <div id="step2" class="drag five" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+&lt;script&gt;
+</pre>
+                                </div>
+                                <div id="drop3" class="dropzone six" ondrop="drop(event)" ondragover="allowDrop(event)">Step 3</div>
+                                <div id="step4" class="drag seven" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+document.getElementById("demo").innerHTML = "Hello World!";}
+</pre>
+                                </div>
+                                <div id="drop4" class="dropzone eight" ondrop="drop(event)" ondragover="allowDrop(event)">Step 4</div>
+
+                                <div id="step6" class="drag nine" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+&lt;/script&gt;
+</pre>
+                                </div>
+                                <div id="drop5" class="dropzone ten" ondrop="drop(event)" ondragover="allowDrop(event)">Step 5</div>
+
+                                <div id="step5" class="drag eleven" draggable="true" ondragstart="drag(event)">
+<pre class="code block-height">
+myFunction();
+</pre>
+                                </div>
+                                <div id="drop6" class="dropzone twelve" ondrop="drop(event)" ondragover="allowDrop(event)">Step 6</div>
+                              </div>
+                              <button onclick="checkAns(event)" class="checkButton btn">Check Your Answers!</button>
+                              <div id="game-res"></div>
+                            </div>
+
+                </div>
+              </div>
+
+
+
+
+
+      </div>
+    </section>
+    <!-- __end section Quiz -->
+    <div class="clearfix"></div>
+    <div class="space-60"></div><!-- Quickly A 60px Div instead of bothering with paddings. -->
+
+
+
+    <script type="text/javascript" src="JS/quiz3-tabs.js"></script>
+    <script type="text/javascript" src="JS/quiz3-game.js"></script>
+
+    <footer>
+      <div class="space-30"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+      <div class="container">
+        <div class="footer-wrap text-center">
+          <div class="row">
+
+              <div class="contact-form col-sm-12 col-lg-4">
+                <h4 class="txt-left">Get it out of your mind.</h4>
+                <form id="contact-form" class="contact-form" action="send.php" method="post">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Full Name" class="txtinput">
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Email" class="txtinput">
+                      </div>
+
+                      <div class="col-12">
+                        <input type="text" name="" placeholder="Subject" class="txtinput">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="name" rows="4" placeholder="Message" class="txtinput"></textarea> <br>
+                      </div>
+
+                      <div class="col-12">
+                        <input class="send-btn btn" type="submit" id="send" name="send" value="Send" class="send">
+                      </div>
+                    </div>
+                </form>
+              </div>
+
+              <div class="soc-links col-sm-12 col-lg-4 text-center">
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+                <a target="_blank" href="https://twitter.com/Abd_AllahRabea"><i id="fa" class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://medium.com/@arabea.moh"><i id="fa" class="fab fa-medium"></i></a>
+                <a target="_blank" href="https://www.behance.net/arabeamohf5cc"><i id="fa" class="fab fa-behance"></i></a>
+                <a target="_blank" href="https://dribbble.com/arabea"><i id="fa" class="fab fa-dribbble"></i></a>
+                <a target="_blank" href="https://www.facebook.com/arabea15"><i id="fa" class="fab fa-facebook-f "></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/arabea/"><i id="fa" class="fab fa-linkedin-in"></i></a>
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+              </div>
+
+              <div class="quick-links col-sm-12 col-lg-4 txt-left green">
+                <h4 class="txt-left">Quick Links</h4>
+                <ul class="clear-list">
+                  <li><a class="clear-link quick-link grey" target="_blank" href="https://mzl.la/2tJZOv3">More about JS</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz1.html">Quiz One: Warm It Up </a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz2.html">Quiz Two: Keep The vibe!</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz3.html">Quiz Three: Piece Of Cake!</a></li>
+                  <li><a class="clear-link quick-link blue" target="_blank" href="index.html">Contact Page</a></li>
+                </ul>
+              </div>
+
+              <!-- copyright line -->
+              <div class="copyright txt-center col-sm-12">
+                <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+                <small>African Leadership College 2018 &copy; JS Gaming</small>
+                <small class=" txt-center col-sm-12"><a class="personal-website" href="https://www.abdullahrabea.com">abdullahrabea.com</a></small>
+              </div>
+
+
+
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

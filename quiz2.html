@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--  Quiz 2
+===========================================================================
+1. Radio Buttons Quiz
+2. Feedback on Submittion
+3. Grade on Submittion
+4. Needs a Submittion Button
+-->
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Keep The Vibe! | Script</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Ubuntu" rel="stylesheet">
+    <!-- resit browser to defualt -->
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/grid.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+
+<!-- There we go ..-->
+  <body class="quiz-2">
+    <!-- start navigation bar -->
+    <!-- start navigation bar -->
+    <nav>
+        <div class="navbar">
+          <div class="container">
+            <a href="index.html" class="clearlink nav-link"><img class="logo" src="images/script.png" alt="Script"/></a>
+            <a href="contact.html" class="clearlink nav-link"><span class="cont-link blue">Contact Prof!</span></a>
+          </div>
+        </div>
+      <div class="clearfix"></div>
+    </nav>
+  <!-- __end navigation bar -->
+
+  <!-- start of header
+  ======================================================================================= -->
+    <header class="header">
+      <div class="container">
+        <h1 class="yellow"><a class="clearlink head-link grey" href="index.html">Script</a>     <i class="fas fa-angle-right grey"></i> keep the Vibe!</h1>
+        <p class="des-p grey">
+          Hi There. This quiz is an MCQ formed of 10 Questions. <br>
+          Answer all questions first, then click submit to receive your result. <br>
+          We recommend you don’t google stuff to know where you are exactly from JavaScript.<br>
+          Or, you know what? Just use google. This is no history class.
+            <br>
+            <br>
+            Cool? Get going! <br>
+            Got something in your mind?
+            <a class="clearlink par-link yellow" href="contact.html">drop me a message</a>
+        </p>
+      </div>
+    </header>
+  <!-- _end header -->
+
+    <!-- end of header
+    ======================================================================================= -->
+    <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+    <!-- start section Quiz -->
+    <section class="quiz2">
+      <div class="container">
+        <!-- Quiz will be populated through JS -->
+        <div id="quiz"></div>
+
+
+        <div class="space-10"></div>
+
+        <button id="submit" class="button submit-btn btn">Submit Quiz</button>
+
+        <div id="results"></div>
+
+      </div>
+    </section>
+    <!-- __end section Quiz -->
+    <div class="clearfix"></div>
+    <div class="space-60"></div><!-- Quickly A 60px Div instead of bothering with paddings. -->
+
+    <script src="JS/script-quiz2.js"></script><!--pupulates quiz with content and provides feedback-->
+
+
+    <footer>
+      <div class="space-30"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+      <div class="container">
+        <div class="footer-wrap text-center">
+          <div class="row">
+
+              <div class="contact-form col-sm-12 col-lg-4">
+                <h4 class="txt-left">Get it out of your mind.</h4>
+                <form id="contact-form" class="contact-form" action="send.php" method="post">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Full Name" class="txtinput">
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Email" class="txtinput">
+                      </div>
+
+                      <div class="col-12">
+                        <input type="text" name="" placeholder="Subject" class="txtinput">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="name" rows="4" placeholder="Message" class="txtinput"></textarea> <br>
+                      </div>
+
+                      <div class="col-12">
+                        <input class="send-btn btn" type="submit" id="send" name="send" value="Send" class="send">
+                      </div>
+                    </div>
+                </form>
+              </div>
+
+              <div class="soc-links col-sm-12 col-lg-4 text-center">
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+                <a target="_blank" href="https://twitter.com/Abd_AllahRabea"><i id="fa" class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://medium.com/@arabea.moh"><i id="fa" class="fab fa-medium"></i></a>
+                <a target="_blank" href="https://www.behance.net/arabeamohf5cc"><i id="fa" class="fab fa-behance"></i></a>
+                <a target="_blank" href="https://dribbble.com/arabea"><i id="fa" class="fab fa-dribbble"></i></a>
+                <a target="_blank" href="https://www.facebook.com/arabea15"><i id="fa" class="fab fa-facebook-f "></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/arabea/"><i id="fa" class="fab fa-linkedin-in"></i></a>
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+              </div>
+
+              <div class="quick-links col-sm-12 col-lg-4 txt-left green">
+                <h4 class="txt-left">Quick Links</h4>
+                <ul class="clear-list">
+                  <li><a class="clear-link quick-link grey" target="_blank" href="https://mzl.la/2tJZOv3">More about JS</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz1.html">Quiz One: Warm It Up </a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz2.html">Quiz Two: Keep The vibe!</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz3.html">Quiz Three: Piece Of Cake!</a></li>
+                  <li><a class="clear-link quick-link blue" target="_blank" href="index.html">Contact Page</a></li>
+                </ul>
+              </div>
+
+              <!-- copyright line -->
+              <div class="copyright txt-center col-sm-12">
+                <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+                <small>African Leadership College 2018 &copy; JS Gaming</small>
+                <small class=" txt-center col-sm-12"><a class="personal-website" href="https://www.abdullahrabea.com">abdullahrabea.com</a></small>
+              </div>
+
+
+
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

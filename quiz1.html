@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--  Quiz 1
+===========================================================================
+1. Radio Buttons Quiz
+2. Instant feedback
+3. No Submition Button
+-->
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Warm It Up | Script</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Ubuntu" rel="stylesheet">
+    <!-- resit browser to defualt -->
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/grid.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+
+
+<!-- There we go ..-->
+  <body class="quiz-1">
+    <!-- start navigation bar -->
+    <nav>
+        <div class="navbar">
+          <div class="container">
+            <a href="index.html" class="clearlink nav-link"><img class="logo" src="images/script.png" alt="Script"/></a>
+            <a href="contact.html" class="clearlink nav-link"><span class="cont-link blue">Contact Prof!</span></a>
+          </div>
+        </div>
+      <div class="clearfix"></div>
+    </nav>
+  <!-- __end navigation bar -->
+
+  <!-- start of header
+  ======================================================================================= -->
+    <header class="header">
+      <div class="container">
+        <h1 class="yellow"><a class="clearlink head-link grey" href="index.html">Script</a>     <i class="fas fa-angle-right grey"></i> Warm It Up!</h1>
+        <p class="des-p grey">
+          Hi There! <br>
+          This quiz is an MCQ formed of 9 Questions.<br>
+          You get instant feedback when you pick an answer. So, think before you make your first click. <br>
+          These questions are just to open doors for you to challenge your knowlwledge. So, don't stop here<br>
+          Google stuff if you don’t know... that’s how you will learn.<br>
+            <br>
+            <br>
+            Cool? Get going! <br>
+            Got something in your mind?
+            <a class="clearlink par-link yellow" href="contact.html">drop me a message</a>
+        </p>
+      </div>
+    </header>
+  <!-- _end header -->
+
+    <!-- end of header
+    ======================================================================================= -->
+    <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+    <!-- start section Quiz -->
+    <section class="quiz1">
+      <div class="container">
+        <div class="quiz1-questions">
+          <div class="row txt-left">
+            <h3 id="questionNumber" class="col-12 Lblue">1 out of 10</h3>
+            <div class="question col-12 txt-center">The following code will result in which output?</div>
+            <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code txt-left col-12">
+  &lt;script&gt;
+    x=5+"6";
+    document.write(x);
+  &lt;/script&gt;
+</pre>
+            <form class="answers col-12">
+              <div class="row">
+      <!--true--> <input id="rad1a" class="answer" type="radio" name="question1" value='a'><label class="" for=rad1a>56</label>
+                  <input id="rad1b" class="answer" type="radio" name="question1" value='b'><label class="" for=rad1b>11</label>
+                  <input id="rad1c" class="answer" type="radio" name="question1" value='c'><label class="" for=rad1c>5</label>
+                  <input id="rad1d" class="answer" type="radio" name="question1" value='d'><label class="" for=rad1d>Error output</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result1"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">2 out of 10</h3>
+
+            <div class="question col-12 txt-center">Running this code would result in which of the following strings being displayed on the webpage?</div>
+            <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+  &lt;script&gt;
+      var myString = "this is javaScript";
+      var result = myString.split(" ");
+      document.write(result);
+  &lt;/script&gt;
+</pre>
+
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad2a" class="answer" type="radio" name="question2" value='a'><label class="" for=rad2a>this</label>
+                  <input id="rad2b" class="answer" type="radio" name="question2" value='b'><label class="" for=rad2b>t,h,i,s,i,s,j,a,v,a,S,c,r,i,p,t</label>
+      <!--true--> <input id="rad2c" class="answer" type="radio" name="question2" value='c'><label class="" for=rad2c>this,is,javaScript</label>
+                  <input id="rad2d" class="answer" type="radio" name="question2" value='d'><label class="" for=rad2d>thisisjavaScript</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result2"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">3 out of 10</h3>
+
+            <div class="question  col-12 txt-center">Which of the following methods is used to evaluate a regular expression or string as if it were script code?</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+      <!--true--> <input id="rad3a" class="answer" type="radio" name="question3" value='a'><label class="" for=rad3a>eval(“2*(3+5)”)</label>
+                  <input id="rad3b" class="answer" type="radio" name="question3" value='b'><label class="" for=rad3b>evaluate(“2*(3+5)”)</label>
+                  <input id="rad3c" class="answer" type="radio" name="question3" value='c'><label class="" for=rad3c>evalu(“2*(3+5)”)</label>
+                  <input id="rad3d" class="answer" type="radio" name="question3" value='d'><label class="" for=rad3d>None of the above</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result3"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">4 out of 10</h3>
+
+            <div class="question col-12 txt-center">Which of the options is correct?</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad4a" class="answer" type="radio" name="question4" value='a'><label class="" for=rad4a>Each line of JavaScript must end with a semicolon.</label>
+                  <input id="rad4b" class="answer" type="radio" name="question4" value='b'><label class="" for=rad4b>All names in JavaScript must use camelCase.</label>
+      <!--true--> <input id="rad4c" class="answer" type="radio" name="question4" value='c'><label class="" for=rad4c>JavaScript is case-sensitive.</label>
+                  <input id="rad4d" class="answer" type="radio" name="question4" value='d'><label class="" for=rad4d>JavaScript cares about whitespace.</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result4"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">5 out of 10</h3>
+
+            <div class="question col-12 txt-center"> Which type of comments are used in javascript ?</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad5a" class="answer" type="radio" name="question5" value='a'><label class="" for=rad5a>// , /* ...... **/</label>
+                  <input id="rad5b" class="answer" type="radio" name="question5" value='b'><label class="" for=rad5b>/ , /** ......./ , /*</label>
+      <!--true--> <input id="rad5c" class="answer" type="radio" name="question5" value='c'><label class="" for=rad5c>/*......*/ , //</label>
+                  <input id="rad5d" class="answer" type="radio" name="question5" value='d'><label class="" for=rad5d>\*......*\ , //</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result5"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">6 out of 10</h3>
+
+            <div class="question col-12 txt-center">Scripting language such as javaScript are</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+      <!--true--> <input id="rad6a" class="answer" type="radio" name="question6" value='a'><label class="" for=rad6a>High Level Programming language</label>
+                  <input id="rad6b" class="answer" type="radio" name="question6" value='b'><label class="" for=rad6b>Assembly Level programming language</label>
+                  <input id="rad6c" class="answer" type="radio" name="question6" value='c'><label class="" for=rad6c>Machine Level programming language</label>
+                  <input id="rad6d" class="answer" type="radio" name="question6" value='d'><label class="" for=rad6d>Marking up languages</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result6"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">7 out of 10</h3>
+
+            <div class="question col-12 txt-center">What output will be displayed in the console window after the following code is run?</div>
+            <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+  &lt;script&gt;
+      var myString="Web Platform Development";
+      var result =myString.lastIndexOf("l");
+      console.log(result);
+  &lt;/script&gt;
+</pre>
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad7a" class="answer" type="radio" name="question7" value='a'><label class="" for=rad7a>2</label>
+                  <input id="rad7b" class="answer" type="radio" name="question7" value='b'><label class="" for=rad7b>3</label>
+      <!--true--> <input id="rad7c" class="answer" type="radio" name="question7" value='c'><label class="" for=rad7c>17</label>
+                  <input id="rad7d" class="answer" type="radio" name="question7" value='d'><label class="" for=rad7d>18</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result7"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">8 out of 10</h3>
+
+            <div class="question col-12 txt-center">Javascript is a ________ typed language.</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad8a" class="answer" type="radio" name="question8" value='a'><label class="" for=rad8a>Strictly</label>
+      <!--true--> <input id="rad8b" class="answer" type="radio" name="question8" value='b'><label class="" for=rad8b>Loosely</label>
+                  <input id="rad8c" class="answer" type="radio" name="question8" value='c'><label class="" for=rad8c>Automatically</label>
+                  <input id="rad8d" class="answer" type="radio" name="question8" value='d'><label class="" for=rad8d>Globally</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result8"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">9 out of 10</h3>
+
+            <div class="question col-12 txt-center">What will be displayed in the alert box when this code is run?</div>
+            <div class="space-30"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+
+<pre class="code col-12">
+  &lt;script&gt;
+    Var exmp = “Web Platform Development”;
+    Alert(exmp.charAt(exmp.length-1));
+  &lt;/script&gt;
+</pre>
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad9a" class="answer" type="radio" name="question9" value='a'><label class="" for=rad9a>P</label>
+                  <input id="rad9b" class="answer" type="radio" name="question9" value='b'><label class="" for=rad9b>N</label>
+      <!--true--> <input id="rad9c" class="answer" type="radio" name="question9" value='c'><label class="" for=rad9c>T</label>
+                  <input id="rad9d" class="answer" type="radio" name="question9" value='d'><label class="" for=rad9d>Error</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result9"></div>
+          </div>
+        </div>
+
+        <div class="quiz1-questions">
+          <div class="row">
+            <h3 id="questionNumber" class="col-12 Lblue">10 out of 10</h3>
+
+            <div class="question  col-12 txt-center">How do you create a new object in JavaScript?</div>
+            <div class="space-50"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+            <form class="answers col-12">
+              <div class="row">
+                  <input id="rad10a" class="answer" type="radio" name="question10" value='a'><label class="" for=rad10a>Var obj = new{};</label>
+                  <input id="rad10b" class="answer" type="radio" name="question10" value='b'><label class="" for=rad10b>Var obj = Object(); </label>
+      <!--true--> <input id="rad10c" class="answer" type="radio" name="question10" value='c'><label class="" for=rad10c>Var obj = {};</label>
+                  <input id="rad10d" class="answer" type="radio" name="question10" value='d'><label class="" for=rad10d>None of the above</label>
+              </div>
+            </form>
+            <div class="result col-12 txt-center" id="result10"></div>
+          </div>
+        </div>
+
+        <div class="space-10"></div><!-- Quickly A 10px Div instead of bothering with paddings. -->
+        <!-- Next & Previous Buttons -->
+        <div id="previous-next">
+            <button class="previous-btn btn  left" id="prev-question-button" onclick="displayPrevious()"><span> <i class="fas fa-angle-left"></i></span>  Back</button>
+            <button class="next-btn btn  right" id="next-question-button" onclick="displayNext();">Next  <span><i class="fas fa-angle-right"></i></span></button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="space-60"></div><!-- Quickly A 60px Div instead of bothering with paddings. -->
+
+
+      <script src="JS/script-quiz1.js"></script>
+
+    </section>
+    <!-- __end section Quiz -->
+
+    <footer>
+      <div class="space-30"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+
+      <div class="container">
+        <div class="footer-wrap text-center">
+          <div class="row">
+
+              <div class="contact-form col-sm-12 col-lg-4">
+                <h4 class="txt-left">Get it out of your mind.</h4>
+                <form id="contact-form" class="contact-form" action="send.php" method="post">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Full Name" class="txtinput">
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input type="text" name="" placeholder="Email" class="txtinput">
+                      </div>
+
+                      <div class="col-12">
+                        <input type="text" name="" placeholder="Subject" class="txtinput">
+                      </div>
+                      <div class="col-12">
+                        <textarea name="name" rows="4" placeholder="Message" class="txtinput"></textarea> <br>
+                      </div>
+
+                      <div class="col-12">
+                        <input class="send-btn btn" type="submit" id="send" name="send" value="Send" class="send">
+                      </div>
+                    </div>
+                </form>
+              </div>
+
+              <div class="soc-links col-sm-12 col-lg-4 text-center">
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+                <a target="_blank" href="https://twitter.com/Abd_AllahRabea"><i id="fa" class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://medium.com/@arabea.moh"><i id="fa" class="fab fa-medium"></i></a>
+                <a target="_blank" href="https://www.behance.net/arabeamohf5cc"><i id="fa" class="fab fa-behance"></i></a>
+                <a target="_blank" href="https://dribbble.com/arabea"><i id="fa" class="fab fa-dribbble"></i></a>
+                <a target="_blank" href="https://www.facebook.com/arabea15"><i id="fa" class="fab fa-facebook-f "></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/arabea/"><i id="fa" class="fab fa-linkedin-in"></i></a>
+                <div class="space-25"></div><!-- Quickly A 50px Div instead of bothering with paddings. -->
+              </div>
+
+              <div class="quick-links col-sm-12 col-lg-4 txt-left green">
+                <h4 class="txt-left">Quick Links</h4>
+                <ul class="clear-list">
+                  <li><a class="clear-link quick-link grey" target="_blank" href="https://mzl.la/2tJZOv3">More about JS</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz1.html">Quiz One: Warm It Up </a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz2.html">Quiz Two: Keep The vibe!</a></li>
+                  <li><a class="clear-link quick-link grey" target="_blank" href="quiz3.html">Quiz Three: Piece Of Cake!</a></li>
+                  <li><a class="clear-link quick-link blue" target="_blank" href="index.html">Contact Page</a></li>
+                </ul>
+              </div>
+
+              <!-- copyright line -->
+              <div class="copyright txt-center col-sm-12">
+                <div class="space-10"></div><!-- Quickly A 30px Div instead of bothering with paddings. -->
+                <small>African Leadership College 2018 &copy; JS Gaming</small>
+                <small class=" txt-center col-sm-12"><a class="personal-website" href="https://www.abdullahrabea.com">abdullahrabea.com</a></small>
+              </div>
+
+
+
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
